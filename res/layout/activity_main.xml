@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gdcc.wsyy.MainActivity" >
+
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout> 
+    <TextView 
+          android:layout_width="match_parent"
+          android:layout_height="2px"
+          android:layout_marginBottom="1dp"
+          android:background="#46a0f0"/>   
+   
+    <RadioGroup
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <RadioButton 
+            android:id="@+id/main_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/bg"
+            android:gravity="center"
+            android:text="服务"  
+            android:paddingLeft="0dp" 
+            android:layout_weight="1"   
+            android:button="@null"/>
+        
+        <RadioButton 
+            android:id="@+id/main_messgae"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+             android:drawableTop="@drawable/xiaoxi"
+             android:gravity="center"
+            android:text="消息"  
+             android:paddingLeft="0dp" 
+            android:layout_weight="1" 
+            android:button="@null" />
+        
+        
+        <RadioButton 
+            android:id="@+id/main_move"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:drawableTop="@drawable/dt" 
+             android:gravity="center"
+            android:text="动态"  
+            android:layout_weight="1"  
+            android:button="@null"
+             android:paddingLeft="0dp"   />
+        
+        
+        <RadioButton 
+            android:id="@+id/main_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:drawableTop="@drawable/wd" 
+             android:paddingLeft="0dp" 
+             android:gravity="center"
+            android:text="我的"  
+            android:layout_weight="1"  
+            android:button="@null"  />
+      
+    </RadioGroup>
+    
+    
+</LinearLayout>

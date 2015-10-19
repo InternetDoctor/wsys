@@ -48,31 +48,31 @@ public final class R {
         public static final int pingjia=0x7f020017;
         public static final int sbingli=0x7f020018;
         public static final int search=0x7f020019;
-        public static final int setting_mor=0x7f02001a;
-        public static final int shezhi=0x7f02001b;
-        public static final int sousuo=0x7f02001c;
-        public static final int ss_main=0x7f02001d;
-        public static final int wd=0x7f02001e;
-        public static final int welcome=0x7f02001f;
-        public static final int wode=0x7f020020;
-        public static final int wodoc=0x7f020021;
-        public static final int xiaoxi=0x7f020022;
-        public static final int xx=0x7f020023;
-        public static final int y_me_main=0x7f020024;
-        public static final int y_message_main=0x7f020025;
-        public static final int y_new_main=0x7f020026;
-        public static final int y_ss_main=0x7f020027;
-        public static final int yy=0x7f020028;
-        public static final int zx=0x7f020029;
+        public static final int search_bg=0x7f02001a;
+        public static final int setting_mor=0x7f02001b;
+        public static final int shezhi=0x7f02001c;
+        public static final int sousuo=0x7f02001d;
+        public static final int ss_main=0x7f02001e;
+        public static final int ty_ss_btn=0x7f02001f;
+        public static final int wd=0x7f020020;
+        public static final int welcome=0x7f020021;
+        public static final int wode=0x7f020022;
+        public static final int wodoc=0x7f020023;
+        public static final int xiaoxi=0x7f020024;
+        public static final int xx=0x7f020025;
+        public static final int y_me_main=0x7f020026;
+        public static final int y_message_main=0x7f020027;
+        public static final int y_new_main=0x7f020028;
+        public static final int y_ss_main=0x7f020029;
+        public static final int yy=0x7f02002a;
+        public static final int zx=0x7f02002b;
     }
     public static final class id {
-        public static final int Register=0x7f08000f;
-        public static final int action_settings=0x7f080011;
-        public static final int btnStart=0x7f08000c;
-        public static final int btnStop=0x7f08000d;
-        public static final int cpassword=0x7f08000e;
-        public static final int denglu2=0x7f08000b;
-        public static final int denglub=0x7f08000a;
+        public static final int action_settings=0x7f08000d;
+        public static final int denglu2=0x7f080008;
+        public static final int denglub=0x7f080007;
+        public static final int et_search=0x7f08000c;
+        public static final int iv_search=0x7f08000b;
         public static final int login_back=0x7f080006;
         public static final int main_bottom=0x7f080001;
         public static final int main_content=0x7f080000;
@@ -80,22 +80,18 @@ public final class R {
         public static final int main_me=0x7f080005;
         public static final int main_messgae=0x7f080003;
         public static final int main_move=0x7f080004;
-        public static final int password=0x7f080009;
-        public static final int register=0x7f080007;
-        public static final int searchView1=0x7f080010;
-        public static final int username=0x7f080008;
+        public static final int searchView1=0x7f080009;
+        public static final int view_temp=0x7f08000a;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int login_in=0x7f030001;
         public static final int me_main=0x7f030002;
-        public static final int message=0x7f030003;
-        public static final int message_m_main=0x7f030004;
-        public static final int new_m_main=0x7f030005;
-        public static final int register=0x7f030006;
-        public static final int search=0x7f030007;
-        public static final int service_m_main=0x7f030008;
-        public static final int welcome=0x7f030009;
+        public static final int message_m_main=0x7f030003;
+        public static final int new_m_main=0x7f030004;
+        public static final int search=0x7f030005;
+        public static final int service_m_main=0x7f030006;
+        public static final int welcome=0x7f030007;
     }
     public static final class menu {
         public static final int main=0x7f070000;

@@ -12,18 +12,18 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
-public class Register extends Activity{
+public class Register extends Activity {
 	private EditText username, password,cpassword;
 	private Button register;
 	  ImageView loginback;
 	  protected void onCreate(Bundle savedInstanceState) {
 			// TODO Auto-generated method stub
 			super.onCreate(savedInstanceState);
-			setContentView(R.layout.login_in);
+			setContentView(R.layout.register);
 			username = (EditText) findViewById(R.id.username);
 			password = (EditText) findViewById(R.id.password);
 			cpassword = (EditText) findViewById(R.id.cpassword);
-	        register = (Button) findViewById(R.id.register);
+	        register = (Button) findViewById(R.id.Register);
 	        loginback=(ImageView)findViewById(R.id.login_back);
 	    register.setOnClickListener(new View.OnClickListener() {
 	    	   public void onClick(View v){ 

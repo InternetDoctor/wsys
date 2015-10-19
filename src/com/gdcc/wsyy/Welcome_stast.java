@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.view.View.OnClickListener;
-import android.view.Window;
-import android.view.WindowManager;
 
 public class Welcome_stast extends Activity {
 
@@ -15,18 +13,7 @@ public class Welcome_stast extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		
-		
-		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-				WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setContentView(R.layout.welcome);
-		
-		
-		
-		
-		
-		
 		new Handler(new Handler.Callback() {
 			
 			@Override

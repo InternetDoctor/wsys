@@ -30,16 +30,18 @@ public class message extends Activity  implements OnClickListener {
 	public void onClick(View v) {
 		int id = v.getId();
 		if (id == R.id.btnStart) {
-			// å¯åŠ¨Service
+			// Æô¶¯Service
 			Intent intent = new Intent();
 			intent.setAction("ymw.MY_SERVICE");
 			startService(intent);
 		}
 		if (id == R.id.btnStop) {
-			// å…³é—­Service
-			Intent intent = new Intent();
-			intent.setAction("ymw.MY_SERVICE");
-			stopService(intent);
+			// ¹Ø±ÕService
+			/*Intent intent = new Intent();*/
+		//	intent.setAction("ymw.MY_SERVICE");
+		      //stopService(intent);
+			Intent intent = new Intent(message.this, MainActivity.class);
+			startActivity(intent);
 		}
 	}
 

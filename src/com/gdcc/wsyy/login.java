@@ -1,156 +1,177 @@
-package com.gdcc.wsyy;
+package com.gdcc.wsyy; 
+
+import java.io.IOException;
+import java.io.InputStream;
+
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.conn.DefaultClientConnection;
+
+import com.gdcc.wsyy.data.utils;
 
 import android.app.Activity;
-import android.app.AlertDialog;
+import android.app.Dialog;
+import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.accessibility.CaptioningManager.CaptioningChangeListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
-import android.content.ComponentName;
-import android.content.DialogInterface;
-//import android.content.DialogInterface.OnClickListener;
-import android.content.Intent;
-import android.util.Log;
-import android.view.Menu;
-import android.view.View;
-import android.view.View.OnClickListener;
+import android.widget.Toast;
 
 public class login extends Activity {
-	private EditText username, password;
-	private Button denglub;
-	  ImageView loginback;
-	  TextView registerback;
-	 
-
+	
+	Button loginButton;
+	EditText loginId;
+	EditText loginPsw;
+    ImageView loginback;
+	private static ProgressDialog dialog;
+    
+    
+    Handler han= new Handler(){
+    
+    	public void handleMessage(android.os.Message msg) {
+			Toast.makeText(login.this,(String)msg.obj,0).show();
+		}
+    };
+    
+    
+    
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.login_in);
-		username = (EditText) findViewById(R.id.username);
-		password = (EditText) findViewById(R.id.password);
-        denglub = (Button) findViewById(R.id.denglub);
-        loginback=(ImageView)findViewById(R.id.login_back);
-        registerback=(TextView)findViewById(R.id.register);
-       denglub.setOnClickListener(new View.OnClickListener() {
-    	   public void onClick(View v){ 
-   	    } 
-   	});
-      
+		loginback=(ImageView)findViewById(R.id.login_back);
 
-       denglub.setOnClickListener(new View.OnClickListener(){ 
- 	      @Override 
+		loginButton=(Button)findViewById(R.id.denglub);
+		
+		
+		loginButton.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v1) {
+				
+				loginId=(EditText)findViewById(R.id.LoginId);
+				loginPsw=(EditText)findViewById(R.id.LoginPsw);
 
+				final	String ID=loginId.getText().toString();
+				final	String psw=loginPsw.getText().toString();
+				
+				/**
+				 * è¾“å…¥å€¼éªŒè¯
+				 * 
+				 */
+				
+				/**
+				 * loading
+				 * 
+				 */
+				
+				if (dialog==null) {
+					
+					dialog=new ProgressDialog(login.this);
+					
+				} 
+					dialog.setTitle("è¯·ç­‰å¾…");
+					dialog.setMessage("ç™»é™†ä¸­...");
+					dialog.setCancelable(false);
+					//dialog.show();		
+					
+					
+					
+					
+					
+				Thread th=new Thread(){
+
+					@Override
+					public void run() {
+
+						String path="http://pc-201502130051:8080/wsyyweb/servlet/loginServlet?LoginName="+ID+"&LoginPassword="+psw;
+						
+						HttpClient hc=new DefaultHttpClient();
+						
+						HttpGet hg=new HttpGet(path);
+						
+					     try {
+							HttpResponse hr=hc.execute(hg);
+							if (hr.getStatusLine().getStatusCode()==200) {
+								//å–å¾—å®ä½“
+								HttpEntity he=hr.getEntity();
+								//å–å¾—å®ä½“çš„è¾“å…¥æµ
+							InputStream is=	he.getContent();
+							
+							String text=utils.getTextFromStream(is);
+							//å‘é€ä¿¡æ¯ï¼Œè®©ä¸»çº¿ç¨‹æ›´æ–°UI
+							Message msg=han.obtainMessage();
+							msg.obj=text;
+							han.sendMessage(msg);
+							
+								
+							}
+			
+						} catch (ClientProtocolException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						} catch (IOException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					
+					}
+					
+				};
+				th.start();
+			
+      	
+            }  
+        });  
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			
+		loginback.setOnClickListener(new OnClickListener()  
+        {  
+            @Override  
+            public void onClick(View v)  
+            {  
+            	finish();
        
-			public void onClick(View v) {
- 	    	 if(validate())
-				{
- 	    		System.out.println("shagua");
-					//µÇÂ¼
-					if(login())
-					{
-						System.out.println("bendan");
-						Intent intent = new Intent(login.this, MainActivity.class);
-						startActivity(intent);
-						//login.this.finish();
-					}
-					else
-					{
-						showDialog("ÓÃ»§Ãû»òÃÜÂë´íÎó£¬ÇëÖØĞÂÊäÈë");
-					}
-				}
+            	
+            }  
+        });  
+		
+
+		
+		
+		
+		
+		
 			}
-		});
-       loginback.setOnClickListener(new OnClickListener()  
-       {  
-           @Override  
-           public void onClick(View v)  
-           {  
-           	finish();
-
-           	
-           }  
-       });  
-
-       registerback.setOnClickListener(new OnClickListener()  
-       {  
-    	 //  System.out.println("11");
-           @Override  
-           public void onClick(View v)  
-           { 
-        	   System.out.println("11");
-        	   Intent intent = new Intent(login.this, Register.class);
-				startActivity(intent);
-
-        	   }
-           	
-           
-       });  
-
-	}
-
-
-private void showDialog(String msg) {
-	AlertDialog.Builder builder = new AlertDialog.Builder(this);
-	builder.setMessage(msg).setPositiveButton("È·¶¨",
-			new DialogInterface.OnClickListener() {
-				@Override
-				public void onClick(DialogInterface dialog, int which) {
-
-				}
-			});
-	AlertDialog ad = builder.create();
-	ad.show();
-}
-/* ¶ÔÓÃ»§ÃûºÍÃÜÂë½øĞĞ·Ç¿ÕÑéÖ¤ */
-private boolean validate() {
-	String name = username.getText().toString();
-	if (name.equals("")) {
-		showDialog("ÓÃ»§Ãû²»ÄÜÎª¿Õ");
-		return false;
-	}
-	String pwd = password.getText().toString();
-	if (pwd.equals("")) {
-		showDialog("ÃÜÂë²»ÄÜÎª¿Õ");
-		return false;
-	}
-	return true;
-}
-
-/* ·¢ËÍ²éÑ¯ÇëÇó */
-private String query(String username, String password) {
-	// SQL×Ö·û´®
-	String queryString = "username=" + username + "&password=" + password;
-	// ²éÑ¯µÄURL
-	String url = HttpUtil.URL + "login?" + queryString;
-	Log.i("url", url);
-	//²éÑ¯²¢·µ»Ø½á¹û
-	return HttpUtil.queryStringForPost(url);
-}
-
-/* µÇÂ¼ */
-private boolean login() {
-	String name = username.getText().toString().trim();
-	String pwd = password.getText().toString().trim();
-		//·µ»Ø²éÑ¯½á¹û
-		String result = query(name, pwd);
-		Log.i("result", result);
-		//¶Ô²éÑ¯µÄ½á¹û½øĞĞÅĞ¶Ï
-		if(result != null && result.equals("1"))
-		{
-			return true;
+			
+			
+			
+			
 		}
-		return false;
-}
-
-
-
-
-}
-
 	
 
-
-
-	

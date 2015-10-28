@@ -32,13 +32,12 @@
                 android:padding="7dp"/>
            
            <TextView 
-               android:id="@+id/register"
+              
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:text="注册"
                android:textSize="16dip"
                android:padding="7dp"
-               android:clickable="true"
                android:textColor="#46a0f0"/>      
        </LinearLayout> 
         
@@ -49,12 +48,12 @@
           android:background="#46a0f0"/>
        
        <EditText 
+           android:id="@+id/LoginId"
            android:layout_width="match_parent"
            android:layout_height="50dp"
            android:background="#FFFFFF"
            android:drawablePadding="5dp"
            android:hint="邮箱/手机号/用户名"
-           android:id="@+id/username"
            android:singleLine="true"
            android:inputType="text"
            android:drawableLeft="@drawable/wode"
@@ -63,12 +62,12 @@
            />
        
         <EditText 
+           android:id="@+id/LoginPsw"
            android:layout_width="match_parent"
            android:layout_height="50dp"
            android:background="#FFFFFF"
            android:drawablePadding="5dp"
            android:hint="密码"
-           android:id="@+id/password"
            android:singleLine="true"
            android:inputType="text"
            android:drawableLeft="@drawable/mima"
@@ -76,7 +75,7 @@
            />
        
         <Button 
-             android:id="@+id/denglub"
+            android:id="@+id/denglub"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_margin="15dp"

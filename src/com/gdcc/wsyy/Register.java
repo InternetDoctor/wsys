@@ -12,20 +12,19 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
-public class Register extends Activity {
+public class Register extends Activity{
 	private EditText username, password,cpassword;
 	private Button register;
-	  ImageView loginback,pictures;
+	  ImageView loginback;
 	  protected void onCreate(Bundle savedInstanceState) {
 			// TODO Auto-generated method stub
 			super.onCreate(savedInstanceState);
-			setContentView(R.layout.register);
+			setContentView(R.layout.login_in);
 			username = (EditText) findViewById(R.id.username);
 			password = (EditText) findViewById(R.id.password);
 			cpassword = (EditText) findViewById(R.id.cpassword);
-	        register = (Button) findViewById(R.id.Register);
+	        register = (Button) findViewById(R.id.register);
 	        loginback=(ImageView)findViewById(R.id.login_back);
-	        pictures=(ImageView)findViewById(R.id.picture_back);
 	    register.setOnClickListener(new View.OnClickListener() {
 	    	   public void onClick(View v){ 
 	   	    } 
@@ -36,11 +35,6 @@ public class Register extends Activity {
 
 	       
 				public void onClick(View v) {
-	 	    		//showDialog("×¢²á³É¹¦");
-	 	    	/* Intent intent1 = new Intent(Register.this, PictureActivity.class);
-					startActivity(intent1);
-*/
-	 	    	  
 	 	    	 if(validate())
 					{
 	 	    		System.out.println("shagua");
@@ -69,18 +63,6 @@ public class Register extends Activity {
 	           	
 	           }  
 	       });  
-	       pictures.setOnClickListener(new OnClickListener()  
-	       {  
-	           @Override  
-	           public void onClick(View v)  
-	           {  
-	        	   Intent intent = new Intent(Register.this, PictureActivity.class);
-					startActivity(intent);
-
-	           	
-	           }  
-	       });  
-
 
 		}
 

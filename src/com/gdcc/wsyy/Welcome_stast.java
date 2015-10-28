@@ -21,7 +21,16 @@ public class Welcome_stast extends Activity {
 		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 				WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setContentView(R.layout.welcome);
+<<<<<<< HEAD
 	
+=======
+		
+		
+		
+		
+		
+		
+>>>>>>> origin/master
 		new Handler(new Handler.Callback() {
 			
 			@Override

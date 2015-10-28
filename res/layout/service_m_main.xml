@@ -139,7 +139,11 @@
         android:id="@+id/iv_search"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_alignParentRight="true"
+=======
+        android:layout_alignParentLeft="true"
+>>>>>>> origin/master
         android:layout_centerVertical="true"
         android:layout_margin="5dp"
         android:background="#F9F9F9"
@@ -153,10 +157,16 @@
         android:layout_above="@id/view_temp"
         android:layout_centerVertical="true"
         android:layout_marginBottom="5dp"
+<<<<<<< HEAD
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_marginTop="5dp"
         android:layout_toLeftOf="@id/iv_search"
+=======
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/iv_search"
+>>>>>>> origin/master
         android:background="@drawable/search_bg"
         android:gravity="fill_vertical"
         android:hint="搜索"

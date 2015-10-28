@@ -14,6 +14,7 @@ import org.apache.http.impl.conn.DefaultClientConnection;
 import com.gdcc.wsyy.data.utils;
 
 import android.app.Activity;
+<<<<<<< HEAD
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -45,6 +46,19 @@ public class login extends Activity {
     };
     
     
+=======
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.ImageView;
+
+public class login extends Activity {
+	
+	
+	
+	ImageView loginback;
+>>>>>>> origin/master
     
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +66,7 @@ public class login extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.login_in);
 		loginback=(ImageView)findViewById(R.id.login_back);
+<<<<<<< HEAD
 
 		loginButton=(Button)findViewById(R.id.denglub);
 		
@@ -150,6 +165,8 @@ public class login extends Activity {
 		
 		
 			
+=======
+>>>>>>> origin/master
 		loginback.setOnClickListener(new OnClickListener()  
         {  
             @Override  
@@ -161,12 +178,16 @@ public class login extends Activity {
             }  
         });  
 		
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 		
 		
 		
 		
 		
+<<<<<<< HEAD
 			}
 			
 			
@@ -175,3 +196,10 @@ public class login extends Activity {
 		}
 	
 
+=======
+	}
+	
+	
+	
+}
+>>>>>>> origin/master

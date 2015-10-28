@@ -83,7 +83,11 @@
         </activity>
         <activity android:name="com.gdcc.wsyy.MainActivity"></activity>
         <activity android:name="com.gdcc.wsyy.login"></activity>
+<<<<<<< HEAD
         <activity android:name="com.gdcc.wsyy.NearbyMapActivity"></activity>
+=======
+        
+>>>>>>> origin/master
         
         
     </application>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+     android:layout_height="match_parent"
+    android:orientation="vertical">"
+    
+    
+   <LinearLayout 
+       android:background="#46a0f0"
+       android:layout_width="match_parent"
+      android:layout_height="45dp"
+ 
+       >
+         
+       
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:text="医院详情"
+           android:textSize="20dip"
+           android:gravity="center" />
+       
+   </LinearLayout> 
+   
+      <LinearLayout           
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="11"
+       android:orientation="vertical"
+       android:paddingLeft="10dp"
+       android:paddingRight="10dp"
+      >
+
+          <ImageView
+              android:id="@+id/imageView1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:src="@drawable/ic_tab_search_image" />
+           <LinearLayout 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+              
+               android:orientation="horizontal">"
+         <TextView 
+              android:layout_width="wrap_content"
+              android:layout_height="30dp"
+              android:textSize="16sp"
+              android:text="医院名称:"/>
+            <TextView 
+              android:id="@+id/ym"
+              android:layout_width="wrap_content"
+              android:layout_height="30dp"
+              android:textSize="12sp"
+              android:textColor="#46a0f0"
+              android:text="医院名称:"/>
+          
+        </LinearLayout>  
+        
+           <LinearLayout 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+              
+               android:orientation="horizontal">
+         <TextView 
+              android:layout_width="wrap_content"
+              android:layout_height="30dp"
+              android:textSize="16sp"
+              android:text="医院等级:"/>
+            <TextView 
+              android:id="@+id/yd"
+              android:layout_width="wrap_content"
+              android:layout_height="30dp"
+              android:textSize="12sp"
+               android:textColor="#46a0f0"
+              android:text="医院等级:"/>
+          
+        </LinearLayout>  
+           <LinearLayout 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+              
+               android:orientation="horizontal">
+         <TextView 
+              android:layout_width="wrap_content"
+              android:layout_height="30dp"
+              android:textSize="16sp"
+              android:text="医院地址:"/>
+            <TextView 
+              android:id="@+id/yz"
+              android:layout_width="wrap_content"
+              android:layout_height="30dp"
+              android:textSize="12sp"
+               android:textColor="#46a0f0"
+              android:text="医院地址:"/>
+          
+        </LinearLayout>  
+           
+           <LinearLayout 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+              
+               android:orientation="horizontal">
+         <TextView 
+              android:layout_width="wrap_content"
+              android:layout_height="30dp"
+              android:textSize="16sp"
+              android:text="医院电话:"/>
+            <TextView 
+              android:id="@+id/yp"
+              android:layout_width="wrap_content"
+              android:layout_height="30dp"
+              android:textSize="12sp"
+               android:textColor="#46a0f0"
+              android:text="医院电话:"/>
+          
+        </LinearLayout>  
+          
+         <TextView 
+              android:layout_width="match_parent"
+              android:layout_height="30dp"
+              android:textSize="16sp"
+              android:text="医院详情:"/>
+      <TextView
+              android:id="@+id/yq"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textSize="12sp"
+              android:textColor="#46a0f0"
+              android:text="医院:"/>
+          
+  
+           
+           
+           
+           
+           
+          
+      </LinearLayout>
+   
+   
+    </LinearLayout> 

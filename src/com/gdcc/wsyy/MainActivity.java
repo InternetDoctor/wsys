@@ -3,6 +3,8 @@ package com.gdcc.wsyy;
 
 import javax.security.auth.PrivateCredentialPermission;
 
+
+
 import android.app.Activity;
 import android.app.FragmentTransaction;
 import android.content.Intent;
@@ -26,8 +28,11 @@ public class MainActivity extends FragmentActivity implements OnCheckedChangeLis
 	private RadioGroup group;
 	 
 	private RadioButton main_service;
-	//¹ÜÀífragment
+	//ï¿½ï¿½ï¿½ï¿½fragment
 	private FragmentManager framang;
+	
+	
+	  
 	
 	
 	
@@ -35,8 +40,7 @@ public class MainActivity extends FragmentActivity implements OnCheckedChangeLis
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
-		
+	
 		group=(RadioGroup)findViewById(R.id.main_bottom);
 		main_service=(RadioButton)findViewById(R.id.main_home);
 		
@@ -46,7 +50,7 @@ public class MainActivity extends FragmentActivity implements OnCheckedChangeLis
 		
 		group.setOnCheckedChangeListener(this);
 		
-		//ÇÐ»»²»Í¬µÄfragment
+		//ï¿½Ð»ï¿½ï¿½ï¿½Í¬ï¿½ï¿½fragment
 		
 		changeFragment(new service_main(), true);
 		
@@ -90,7 +94,7 @@ public class MainActivity extends FragmentActivity implements OnCheckedChangeLis
 	}
 
 	
-	//ÇÐ»»²»Í¬µÄfragment
+	//ï¿½Ð»ï¿½ï¿½ï¿½Í¬ï¿½ï¿½fragment
 	
 	public void changeFragment( Fragment fragment,boolean isFirst){
 		

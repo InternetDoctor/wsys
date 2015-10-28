@@ -32,10 +32,11 @@
        android:paddingTop="20dp"
         >
         <TextView 
+            android:id="@+id/newda"
              android:layout_width="wrap_content"
              android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="免费咨询"
+            android:text="最新问答"
              android:drawableTop="@drawable/zx"
               android:gravity="center"
             />
@@ -44,10 +45,11 @@
         
         
         <TextView 
+             android:id="@+id/ccss"
              android:layout_width="wrap_content"
              android:layout_height="match_parent"
             android:layout_weight="1"
-             android:text="预约挂号"
+             android:text="健康常识"
              android:drawableTop="@drawable/gh"
             android:gravity="center"
             />
@@ -56,10 +58,11 @@
         
         
         <TextView 
+             android:id="@+id/XLZX"
              android:layout_width="wrap_content"
              android:layout_height="match_parent"
             android:layout_weight="1"
-             android:text="会员预约"
+             android:text="心理咨询"
              android:drawableTop="@drawable/hy"
               android:gravity="center"
             />
@@ -96,7 +99,7 @@
              android:layout_width="wrap_content"
              android:layout_height="match_parent"
             android:layout_weight="1"
-             android:text="用药日记"
+             android:text="药品大全"
              android:drawableTop="@drawable/yy"
               android:gravity="center"
            
@@ -106,10 +109,11 @@
         
         
         <TextView 
+             android:id="@+id/JKTS"
              android:layout_width="wrap_content"
              android:layout_height="match_parent"
             android:layout_weight="1"
-             android:text="疾病日记"
+             android:text="健康图书"
              android:drawableTop="@drawable/jb"
               android:gravity="center"
             />
@@ -139,11 +143,7 @@
         android:id="@+id/iv_search"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
         android:layout_alignParentRight="true"
-=======
-        android:layout_alignParentLeft="true"
->>>>>>> origin/master
         android:layout_centerVertical="true"
         android:layout_margin="5dp"
         android:background="#F9F9F9"
@@ -157,16 +157,10 @@
         android:layout_above="@id/view_temp"
         android:layout_centerVertical="true"
         android:layout_marginBottom="5dp"
-<<<<<<< HEAD
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_marginTop="5dp"
         android:layout_toLeftOf="@id/iv_search"
-=======
-        android:layout_marginRight="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_toRightOf="@id/iv_search"
->>>>>>> origin/master
         android:background="@drawable/search_bg"
         android:gravity="fill_vertical"
         android:hint="搜索"

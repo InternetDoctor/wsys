@@ -1,6 +1,5 @@
 package com.gdcc.wsyy;
 
-
 import javax.security.auth.PrivateCredentialPermission;
 
 import android.app.Activity;
@@ -20,114 +19,73 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 
-public class MainActivity extends FragmentActivity implements OnCheckedChangeListener {
+public class MainActivity extends FragmentActivity implements
+		OnCheckedChangeListener {
 
-	
 	private RadioGroup group;
-	 
+
 	private RadioButton main_service;
-	//¹ÜÀífragment
+	// ï¿½ï¿½ï¿½ï¿½fragment
 	private FragmentManager framang;
-	
-	
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
-		
-		group=(RadioGroup)findViewById(R.id.main_bottom);
-		main_service=(RadioButton)findViewById(R.id.main_home);
-		
-		framang=getSupportFragmentManager();
-		
+
+		group = (RadioGroup) findViewById(R.id.main_bottom);
+		main_service = (RadioButton) findViewById(R.id.main_home);
+
+		framang = getSupportFragmentManager();
+
 		main_service.setChecked(true);
-		
+
 		group.setOnCheckedChangeListener(this);
-		
-		//ÇÐ»»²»Í¬µÄfragment
-		
+
+		// ï¿½Ð»ï¿½ï¿½ï¿½Í¬ï¿½ï¿½fragment
+
 		changeFragment(new service_main(), true);
-		
-		
+
 	}
-
-
 
 	@Override
 	public void onCheckedChanged(RadioGroup group, int checkedId) {
 		// TODO Auto-generated method stub
-		
+
 		switch (checkedId) {
 		case R.id.main_home:
 			changeFragment(new service_main(), true);
-		           	break;
-			
-        case R.id.main_messgae:
-        	changeFragment(new message_main(), true);
-			          break;
-			
-        case R.id.main_move:
-        	changeFragment(new new_main(), true);
-	                  break;
-			
-			
-        case R.id.main_me:
-        	changeFragment(new me_main(), true);
-            break;
-		
-				default:
+			break;
+
+		case R.id.main_messgae:
+			changeFragment(new message_main(), true);
+			break;
+
+		case R.id.main_move:
+			changeFragment(new new_main(), true);
+			break;
+
+		case R.id.main_me:
+			changeFragment(new me_main(), true);
+			break;
+
+		default:
 			break;
 		}
-		
-		
-		
-		
-		
-		
-		
+
 	}
 
-	
-	//ÇÐ»»²»Í¬µÄfragment
-	
-	public void changeFragment( Fragment fragment,boolean isFirst){
-		
-		android.support.v4.app.FragmentTransaction tran=framang.beginTransaction();
-		
+	// ï¿½Ð»ï¿½ï¿½ï¿½Í¬ï¿½ï¿½fragment
+
+	public void changeFragment(Fragment fragment, boolean isFirst) {
+
+		android.support.v4.app.FragmentTransaction tran = framang
+				.beginTransaction();
+
 		tran.replace(R.id.main_content, fragment);
-		
+
 		tran.commit();
-		
-		
-		
-		
+
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 }

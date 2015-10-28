@@ -1,17 +1,5 @@
 package com.gdcc.wsyy;
 
-import com.amap.api.location.AMapLocation;
-import com.amap.api.location.AMapLocationListener;
-import com.amap.api.location.LocationManagerProxy;
-import com.amap.api.location.LocationProviderProxy;
-import com.amap.api.maps.AMap;
-import com.amap.api.maps.LocationSource;
-import com.amap.api.maps.MapView;
-import com.gdcc.wsyy.R;
-import com.gdcc.wsyy.R.id;
-import com.gdcc.wsyy.R.layout;
-
-import android.R.integer;
 import android.app.Activity;
 import android.location.Location;
 import android.os.Bundle;
@@ -19,8 +7,18 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
-import android.widget.RadioButton;
-import android.widget.Toast;
+
+import com.amap.api.location.AMapLocation;
+import com.amap.api.location.AMapLocationListener;
+import com.amap.api.location.LocationManagerProxy;
+import com.amap.api.location.LocationProviderProxy;
+import com.amap.api.maps.AMap;
+import com.amap.api.maps.LocationSource;
+import com.amap.api.maps.MapView;
+
+
+
+
 
 public class NearbyMapActivity extends Activity implements LocationSource,AMapLocationListener{
 	
@@ -28,6 +26,7 @@ public class NearbyMapActivity extends Activity implements LocationSource,AMapLo
 	private AMap aMap;
 	private double longitude;
 	private double latitude;
+	private ImageView im;
 
 	
 	private LocationManagerProxy mAMapLocManager = null;
@@ -42,12 +41,35 @@ public class NearbyMapActivity extends Activity implements LocationSource,AMapLo
 	
 	   mapView =(MapView)findViewById(R.id.search_mymap);
 	   mapView.onCreate(savedInstanceState);
+	   im=(ImageView) findViewById(R.id.search_back);
 	   init();
+	   
+	   
+	   im.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+
+            finish();
+			}
+		});
+	   
+	   
+	   
+	   
+	   
+	   
+	   
 
    }
    
    
-   private void init(){
+   private OnClickListener OnClickListener() {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+
+private void init(){
 	   if(aMap==null){
 		   aMap=mapView.getMap();
 		   setUpMap();
@@ -64,13 +86,15 @@ public class NearbyMapActivity extends Activity implements LocationSource,AMapLo
    
    @Override
    protected void onPause(){
+	   //stopLocation();
+	   
 	   super.onPause();
 	   mapView.onPause();
    }
    
    @Override
    protected void onDestroy(){
-	  // stopLocation();
+	// stopLocation();
 	   super.onDestroy();
 	   mapView.onDestroy();
    }
@@ -101,13 +125,6 @@ public class NearbyMapActivity extends Activity implements LocationSource,AMapLo
    }
    
    private void setUpMap(){
-		/*if(aMap==null){
-			   aMap = mapView.getMap();
-			   aMap.setLocationSource(this);
-			   aMap.setMyLocationEnabled(true);
-		   }//启动定位按钮
-         */
-		
 	   aMap.setLocationSource(this);
 	   aMap.getUiSettings().setMyLocationButtonEnabled(true);
 	   aMap.setMyLocationEnabled(true);

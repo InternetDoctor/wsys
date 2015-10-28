@@ -12,12 +12,12 @@
         android:id="@+id/btnStart"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="查看是否有新消息" />
+        android:text="主人，你有新消息" />
 
     <Button
         android:id="@+id/btnStop"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="返回主界面" />
+        android:text="清除" />
 
 </LinearLayout>

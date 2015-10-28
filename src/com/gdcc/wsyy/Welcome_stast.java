@@ -27,7 +27,12 @@ public class Welcome_stast extends Activity {
 			@Override
 			public boolean handleMessage(Message msg) {
 				//ʵ����ת
+<<<<<<< HEAD
 				startActivity(new Intent(getApplicationContext(),MainActivity.class));
+=======
+//				startActivity(new Intent(getApplicationContext(),MainActivity.class));
+				startActivity(new Intent(getApplicationContext(),login.class));
+>>>>>>> origin/master
 				finish();
 				
 				return false;

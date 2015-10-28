@@ -85,6 +85,7 @@ public final class R {
         public static final int zx=0x7f02003c;
     }
     public static final class id {
+<<<<<<< HEAD
         public static final int JKTS=0x7f08002c;
         public static final int LoginId=0x7f080017;
         public static final int LoginPsw=0x7f080018;
@@ -109,6 +110,28 @@ public final class R {
         public static final int linearLayout1=0x7f08001f;
         public static final int linearLayout2=0x7f080020;
         public static final int list=0x7f08001b;
+=======
+        public static final int JKTS=0x7f080024;
+        public static final int LoginId=0x7f080016;
+        public static final int LoginPsw=0x7f080017;
+        public static final int Topp=0x7f080019;
+        public static final int XLZX=0x7f080023;
+        public static final int action_settings=0x7f08002e;
+        public static final int actionbarLayoutId=0x7f08000c;
+        public static final int ccss=0x7f080022;
+        public static final int denglu2=0x7f08001b;
+        public static final int denglub=0x7f080018;
+        public static final int duration=0x7f080014;
+        public static final int et_search=0x7f080027;
+        public static final int fjyy=0x7f080028;
+        public static final int imageView1=0x7f080006;
+        public static final int imgRichpushBtnBack=0x7f08000d;
+        public static final int imgView=0x7f08000e;
+        public static final int iv_search=0x7f080026;
+        public static final int keyw=0x7f08001d;
+        public static final int keywords=0x7f080013;
+        public static final int list=0x7f08001a;
+>>>>>>> origin/master
         public static final int list_image=0x7f080011;
         public static final int login_back=0x7f080015;
         public static final int main_bottom=0x7f080001;
@@ -117,17 +140,25 @@ public final class R {
         public static final int main_me=0x7f080005;
         public static final int main_messgae=0x7f080003;
         public static final int main_move=0x7f080004;
+<<<<<<< HEAD
         public static final int newda=0x7f080029;
         public static final int password=0x7f080023;
         public static final int picture_back=0x7f080021;
         public static final int searchView1=0x7f080026;
         public static final int search_back=0x7f080028;
         public static final int search_mymap=0x7f080027;
+=======
+        public static final int newda=0x7f080021;
+        public static final int searchView1=0x7f08001e;
+        public static final int search_back=0x7f080020;
+        public static final int search_mymap=0x7f08001f;
+>>>>>>> origin/master
         public static final int textView1=0x7f080007;
         public static final int textView2=0x7f080008;
         public static final int textView3=0x7f080009;
         public static final int textView4=0x7f08000a;
         public static final int thumbnail=0x7f080010;
+<<<<<<< HEAD
         public static final int ti=0x7f08001d;
         public static final int title=0x7f080012;
         public static final int tvRichpushTitle=0x7f08000f;
@@ -140,6 +171,18 @@ public final class R {
         public static final int yq=0x7f080035;
         public static final int yz=0x7f080033;
         public static final int zhuce=0x7f080016;
+=======
+        public static final int ti=0x7f08001c;
+        public static final int title=0x7f080012;
+        public static final int tvRichpushTitle=0x7f08000f;
+        public static final int view_temp=0x7f080025;
+        public static final int webView1=0x7f08000b;
+        public static final int yd=0x7f08002a;
+        public static final int ym=0x7f080029;
+        public static final int yp=0x7f08002c;
+        public static final int yq=0x7f08002d;
+        public static final int yz=0x7f08002b;
+>>>>>>> origin/master
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -152,12 +195,20 @@ public final class R {
         public static final int me_main=0x7f030007;
         public static final int message_m_main=0x7f030008;
         public static final int new_m_main=0x7f030009;
+<<<<<<< HEAD
         public static final int register=0x7f03000a;
         public static final int search=0x7f03000b;
         public static final int search_city=0x7f03000c;
         public static final int service_m_main=0x7f03000d;
         public static final int welcome=0x7f03000e;
         public static final int yyjm=0x7f03000f;
+=======
+        public static final int search=0x7f03000a;
+        public static final int search_city=0x7f03000b;
+        public static final int service_m_main=0x7f03000c;
+        public static final int welcome=0x7f03000d;
+        public static final int yyjm=0x7f03000e;
+>>>>>>> origin/master
     }
     public static final class menu {
         public static final int main=0x7f070000;

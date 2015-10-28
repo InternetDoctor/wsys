@@ -1,6 +1,5 @@
 package com.gdcc.wsyy;
 
-
 import javax.security.auth.PrivateCredentialPermission;
 
 
@@ -22,12 +21,13 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 
-public class MainActivity extends FragmentActivity implements OnCheckedChangeListener {
+public class MainActivity extends FragmentActivity implements
+		OnCheckedChangeListener {
 
-	
 	private RadioGroup group;
-	 
+
 	private RadioButton main_service;
+<<<<<<< HEAD
 	//����fragment
 	private FragmentManager framang;
 	
@@ -36,19 +36,34 @@ public class MainActivity extends FragmentActivity implements OnCheckedChangeLis
 	
 	
 	
+=======
+	// ����fragment
+	private FragmentManager framang;
+
+>>>>>>> origin/master
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+<<<<<<< HEAD
 	
 		group=(RadioGroup)findViewById(R.id.main_bottom);
 		main_service=(RadioButton)findViewById(R.id.main_home);
 		
 		framang=getSupportFragmentManager();
 		
+=======
+
+		group = (RadioGroup) findViewById(R.id.main_bottom);
+		main_service = (RadioButton) findViewById(R.id.main_home);
+
+		framang = getSupportFragmentManager();
+
+>>>>>>> origin/master
 		main_service.setChecked(true);
-		
+
 		group.setOnCheckedChangeListener(this);
+<<<<<<< HEAD
 		
 		//�л���ͬ��fragment
 		
@@ -56,43 +71,43 @@ public class MainActivity extends FragmentActivity implements OnCheckedChangeLis
 		
 		
 	}
+=======
+>>>>>>> origin/master
 
+		// �л���ͬ��fragment
 
+		changeFragment(new service_main(), true);
+
+	}
 
 	@Override
 	public void onCheckedChanged(RadioGroup group, int checkedId) {
 		// TODO Auto-generated method stub
-		
+
 		switch (checkedId) {
 		case R.id.main_home:
 			changeFragment(new service_main(), true);
-		           	break;
-			
-        case R.id.main_messgae:
-        	changeFragment(new message_main(), true);
-			          break;
-			
-        case R.id.main_move:
-        	changeFragment(new new_main(), true);
-	                  break;
-			
-			
-        case R.id.main_me:
-        	changeFragment(new me_main(), true);
-            break;
-		
-				default:
+			break;
+
+		case R.id.main_messgae:
+			changeFragment(new message_main(), true);
+			break;
+
+		case R.id.main_move:
+			changeFragment(new new_main(), true);
+			break;
+
+		case R.id.main_me:
+			changeFragment(new me_main(), true);
+			break;
+
+		default:
 			break;
 		}
-		
-		
-		
-		
-		
-		
-		
+
 	}
 
+<<<<<<< HEAD
 	
 	//�л���ͬ��fragment
 	
@@ -100,38 +115,19 @@ public class MainActivity extends FragmentActivity implements OnCheckedChangeLis
 		
 		android.support.v4.app.FragmentTransaction tran=framang.beginTransaction();
 		
+=======
+	// �л���ͬ��fragment
+
+	public void changeFragment(Fragment fragment, boolean isFirst) {
+
+		android.support.v4.app.FragmentTransaction tran = framang
+				.beginTransaction();
+
+>>>>>>> origin/master
 		tran.replace(R.id.main_content, fragment);
-		
+
 		tran.commit();
-		
-		
-		
-		
+
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 }

@@ -7,6 +7,7 @@
     <uses-sdk
         android:minSdkVersion="15"
         android:targetSdkVersion="21" />
+   
    <permission
         android:name="com.gdcc.wsyy.permission.JPUSH_MESSAGE"
         android:protectionLevel="signature" />
@@ -24,6 +25,26 @@
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>  
+      <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+      
+       <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+      
+
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
 
     
     
@@ -34,29 +55,26 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
-    
-    
-    
-
-    
-    
-    
 
     <application
+ 
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@android:style/Theme.Light.NoTitleBar" 
-        android:name=".AppicationPush">
-       
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
         
-         <meta-data
+        
+      <meta-data
             android:name="com.amap.api.v2.apikey"
-            android:value="0620aaa01d748a9e22a4f39c58bf3cb1"/>
+            android:value="2d3f66086a19ccbfc7f138052dd9e04d"/>
+        
+        
+        
+        
         
         
         <activity
-            android:name="com.gdcc.wsyy.Welcome_stast"
+            android:name=".Welcome_stast"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -65,6 +83,7 @@
         </activity>
         <activity android:name="com.gdcc.wsyy.MainActivity"></activity>
         <activity android:name="com.gdcc.wsyy.login"></activity>
+<<<<<<< HEAD
          <activity android:name="com.gdcc.wsyy.me_main"></activity> 
           <activity android:name="com.gdcc.wsyy.NearbyMapActivity"></activity> 
              <activity android:name="com.gdcc.wsyy.YyUI"></activity> 
@@ -169,12 +188,15 @@
             </intent-filter>
         </receiver>
         
+=======
+<<<<<<< HEAD
+        <activity android:name="com.gdcc.wsyy.NearbyMapActivity"></activity>
+=======
+>>>>>>> parent of 97e08b4... 第二次提交
+        
+>>>>>>> origin/master
         
         
-        
-        <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>
-        <meta-data android:name="JPUSH_APPKEY" android:value="e510a6e80833a05ad8c05a6f" /> <!--  </>值来自开发者平台取得的AppKey-->
-               
     </application>
 
 </manifest>

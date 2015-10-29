@@ -51,7 +51,7 @@
             android:layout_height="wrap_content"
              android:drawableTop="@drawable/dt" 
              android:gravity="center"
-            android:text="健识"  
+            android:text="动态"  
             android:layout_weight="1"  
             android:button="@null"
              android:paddingLeft="0dp"   />

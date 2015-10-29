@@ -28,13 +28,12 @@
            android:id="@+id/search_back"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:layout_margin="8dp"
+           android:layout_margin="20dp"
            android:background="#88666666"
            android:contentDescription="@null"
            android:padding="10dp"
            android:src="@drawable/back" />
 
-        
  
       </RelativeLayout> 
 

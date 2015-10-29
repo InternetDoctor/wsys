@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" 
-    android:background="#f0f0f0">
+    android:background="#f5f5f5">
     <LinearLayout 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -124,19 +124,9 @@
         
     </LinearLayout>
    
-     <LinearLayout
-         android:layout_width="match_parent"
-         android:layout_height="210dp"
-         android:layout_alignParentBottom="true">
 
-         <ImageView
-             android:scaleType="centerInside"
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:src="@drawable/loginlogo"
-               android:layout_alignParentBottom="true" />
-
-      </LinearLayout>
+    
+    
     
     
 </RelativeLayout>

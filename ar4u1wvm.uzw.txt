@@ -1,0 +1,99 @@
+﻿Merge remote-tracking branch 'origin/master'
+
+Conflicts:
+	AndroidManifest.xml
+	gen/com/gdcc/wsyy/R.java
+	src/com/gdcc/wsyy/MainActivity.java
+	src/com/gdcc/wsyy/Welcome_stast.java
+	src/com/gdcc/wsyy/login.java
+	src/com/gdcc/wsyy/service_main.java
+#
+# It looks like you may be committing a merge.
+# If this is not correct, please remove the file
+#	.git/MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch and 'origin/master' have diverged,
+# and have 1 and 1 different commit each, respectively.
+#   (use "git pull" to merge the remote branch into yours)
+#
+# All conflicts fixed but you are still merging.
+#
+# Changes to be committed:
+#	modified:   .classpath
+#	deleted:    .gitignore
+#	modified:   AndroidManifest.xml
+#	deleted:    LICENSE
+#	deleted:    README.md
+#	modified:   bin/AndroidManifest.xml
+#	modified:   bin/classes/com/gdcc/wsyy/MainActivity.class
+#	modified:   bin/classes/com/gdcc/wsyy/Manifest$permission.class
+#	modified:   bin/classes/com/gdcc/wsyy/Manifest.class
+#	modified:   bin/classes/com/gdcc/wsyy/R$drawable.class
+#	modified:   bin/classes/com/gdcc/wsyy/Welcome_stast$1.class
+#	modified:   bin/classes/com/gdcc/wsyy/data/Changer.class
+#	modified:   bin/classes/com/gdcc/wsyy/data/utils.class
+#	modified:   bin/classes/com/gdcc/wsyy/json/Jeshijson.class
+#	modified:   bin/classes/com/gdcc/wsyy/json/yyjson.class
+#	modified:   bin/classes/com/gdcc/wsyy/login$2$1.class
+#	modified:   bin/classes/com/gdcc/wsyy/message_main.class
+#	modified:   bin/classes/com/gdcc/wsyy/new_main.class
+#	modified:   bin/classes/com/gdcc/wsyy/service_main$1.class
+#	modified:   bin/classes/com/gdcc/wsyy/service_main$2.class
+#	modified:   bin/classes/com/gdcc/wsyy/service_main$3.class
+#	modified:   bin/dexedLibs/android-support-v4-3b024223b450f4cd417b148ccb196e91.jar
+#	modified:   bin/dexedLibs/jpush-sdk-release1.8.2-ee9d5b9ca9b33690f8c4d4ea6284fd0a.jar
+#	modified:   gen/com/gdcc/wsyy/R.java
+#	deleted:    libs/armeabi-v7a/libjpush182.so
+#	deleted:    libs/armeabi/libjpush182.so
+#	deleted:    libs/jpush-sdk-release1.8.2.jar
+#	new file:   ndnk51be.ach.txt
+#	deleted:    res/drawable-hdpi/arrow.png
+#	deleted:    res/drawable-hdpi/gradient_bg.xml
+#	deleted:    res/drawable-hdpi/gradient_bg_hover.xml
+#	deleted:    res/drawable-hdpi/ic_richpush_actionbar_back.png
+#	deleted:    res/drawable-hdpi/ic_richpush_actionbar_divider.png
+#	deleted:    res/drawable-hdpi/image_bg.xml
+#	deleted:    res/drawable-hdpi/list_selector.xml
+#	deleted:    res/drawable-hdpi/loginlogo.png
+#	deleted:    res/drawable-hdpi/me.jpg
+#	deleted:    res/drawable-hdpi/richpush_btn_selector.xml
+#	deleted:    res/drawable-hdpi/rihanna.png
+#	deleted:    res/drawable-hdpi/shape.xml
+#	deleted:    res/drawable-hdpi/shuijiao.jpg
+#	modified:   res/layout/activity_main.xml
+#	deleted:    res/layout/desc.xml
+#	deleted:    res/layout/jianshi.xml
+#	deleted:    res/layout/jpush_richpush_actionbar_layout.xml
+#	deleted:    res/layout/list_raw.xml
+#	modified:   res/layout/login_in.xml
+#	deleted:    res/layout/main.xml
+#	modified:   res/layout/me_main.xml
+#	modified:   res/layout/message_m_main.xml
+#	modified:   res/layout/new_m_main.xml
+#	modified:   res/layout/search_city.xml
+#	modified:   res/layout/service_m_main.xml
+#	deleted:    res/layout/yyjm.xml
+#	deleted:    src/baidu/api/HealApi.java
+#	deleted:    src/com/example/zixun/Desc.java
+#	deleted:    src/com/example/zixun/Model.java
+#	deleted:    src/com/example/zixun/newadapter.java
+#	deleted:    src/com/example/zixun/vvv.java
+#	modified:   src/com/gdcc/wsyy/MainActivity.java
+#	deleted:    src/com/gdcc/wsyy/MyReceiver.java
+#	modified:   src/com/gdcc/wsyy/NearbyMapActivity.java
+#	modified:   src/com/gdcc/wsyy/Welcome_stast.java
+#	deleted:    src/com/gdcc/wsyy/YyUI.java
+#	deleted:    src/com/gdcc/wsyy/data/Biaozhi.java
+#	deleted:    src/com/gdcc/wsyy/data/model.java
+#	deleted:    src/com/gdcc/wsyy/gg.java
+#	modified:   src/com/gdcc/wsyy/login.java
+#	modified:   src/com/gdcc/wsyy/me_main.java
+#	modified:   src/com/gdcc/wsyy/new_main.java
+#	modified:   src/com/gdcc/wsyy/service_main.java
+#
+

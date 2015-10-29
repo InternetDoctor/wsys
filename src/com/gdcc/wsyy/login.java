@@ -9,8 +9,32 @@ import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
+<<<<<<< HEAD
 
 import android.app.Activity;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+import org.apache.http.impl.conn.DefaultClientConnection;
+
+import com.gdcc.wsyy.data.utils;
+
+import android.app.Activity;
+import android.app.Dialog;
+=======
+
+import android.app.Activity;
+>>>>>>> origin/master
+=======
+import org.apache.http.impl.conn.DefaultClientConnection;
+
+import com.gdcc.wsyy.data.utils;
+
+import android.app.Activity;
+<<<<<<< HEAD
+import android.app.Dialog;
+>>>>>>> parent of 97e08b4... 第二次提交
+>>>>>>> origin/master
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,14 +42,28 @@ import android.os.Handler;
 import android.os.Message;
 import android.view.View;
 import android.view.View.OnClickListener;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+import android.view.accessibility.CaptioningManager.CaptioningChangeListener;
+=======
+>>>>>>> origin/master
+=======
+import android.view.accessibility.CaptioningManager.CaptioningChangeListener;
+>>>>>>> parent of 97e08b4... 第二次提交
+>>>>>>> origin/master
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+<<<<<<< HEAD
 import com.gdcc.wsyy.data.Biaozhi;
 import com.gdcc.wsyy.data.utils;
 
+=======
+>>>>>>> parent of 97e08b4... 第二次提交
 public class login extends Activity {
 	
 	Button loginButton;
@@ -34,10 +72,53 @@ public class login extends Activity {
     ImageView loginback;
 	private static ProgressDialog dialog;
     
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    
+    Handler han= new Handler(){
+    
+    	public void handleMessage(android.os.Message msg) {
+			Toast.makeText(login.this,(String)msg.obj,0).show();
+		}
+    };
+    
+    
+=======
+>>>>>>> origin/master
 	public String ID;
 	public String psw;
+=======
+>>>>>>> parent of 97e08b4... 第二次提交
     
+    Handler han= new Handler(){
+    
+    	public void handleMessage(android.os.Message msg) {
+			Toast.makeText(login.this,(String)msg.obj,0).show();
+		}
+    };
+    
+    
+=======
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.ImageView;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+public class login extends Activity {
+	
+	
+	
+	ImageView loginback;
+>>>>>>> parent of 97e08b4... 第二次提交
+>>>>>>> origin/master
+>>>>>>> origin/master
     
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +126,8 @@ public class login extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.login_in);
 		loginback=(ImageView)findViewById(R.id.login_back);
+<<<<<<< HEAD
+
 		loginButton=(Button)findViewById(R.id.denglub);
 		
 		
@@ -56,8 +139,23 @@ public class login extends Activity {
 				loginId=(EditText)findViewById(R.id.LoginId);
 				loginPsw=(EditText)findViewById(R.id.LoginPsw);
 
+<<<<<<< HEAD
 				 ID=loginId.getText().toString();
 				 psw=loginPsw.getText().toString();
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+				final	String ID=loginId.getText().toString();
+				final	String psw=loginPsw.getText().toString();
+=======
+				 ID=loginId.getText().toString();
+				 psw=loginPsw.getText().toString();
+>>>>>>> origin/master
+=======
+				final	String ID=loginId.getText().toString();
+				final	String psw=loginPsw.getText().toString();
+>>>>>>> parent of 97e08b4... 第二次提交
+>>>>>>> origin/master
 				
 				/**
 				 * 输入值验证
@@ -107,7 +205,23 @@ public class login extends Activity {
 							Message msg=han.obtainMessage();
 							msg.obj=text;
 							han.sendMessage(msg);
+<<<<<<< HEAD
 					}
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+							
+								
+							}
+=======
+					}
+>>>>>>> origin/master
+=======
+							
+								
+							}
+>>>>>>> parent of 97e08b4... 第二次提交
+>>>>>>> origin/master
 			
 						} catch (ClientProtocolException e) {
 							// TODO Auto-generated catch block
@@ -121,13 +235,63 @@ public class login extends Activity {
 					
 				};
 				th.start();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+			
+      	
+            }  
+        });  
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+=======
+>>>>>>> origin/master
 				startActivity(new Intent(login.this,MainActivity.class));
 				    
             } 
 				
         });  
 
+<<<<<<< HEAD
+=======
+>>>>>>> origin/master
+=======
+>>>>>>> origin/master
 			
+      	
+            }  
+        });  
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+>>>>>>> parent of 97e08b4... 第二次提交
+			
+=======
+>>>>>>> origin/master
 		loginback.setOnClickListener(new OnClickListener()  
         {  
             @Override  
@@ -138,41 +302,61 @@ public class login extends Activity {
             	
             }  
         });  
-	
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+		
+		
+=======
+		
+<<<<<<< HEAD
+
+=======
+>>>>>>> origin/master
+>>>>>>> parent of 97e08b4... 第二次提交
+		
+		
+		
+		
+		
+<<<<<<< HEAD
 			}
 			
-	
-	
-	
-    
-    Handler han= new Handler(){
-    
-    	public void handleMessage(android.os.Message msg) {
-			Toast.makeText(login.this,(String)msg.obj,0).show();
-		if (((String)msg.obj).equals("登陆成功")) {
-	
-				//Intent intent=new Intent(login.this,me_main.class);
-				       // intent.putExtra("userId", ID);
-				      //  intent.putExtra("userpsw", psw);
-				       // startActivity(intent);
-			//} else {
-				//Toast.makeText(login.this,"登陆失败",0).show();  
-//			Intent intentll=new Intent(login.this,me_main.class);	
-//			   intentll.putExtra("yname", ID);
-//
-//			   startActivity(intentll);
-			
-			Biaozhi.den=true;
-			Biaozhi.IIDD=ID;
 			
 			
-		  finish(); 
 			
-			
-			}  
 		}
+	
 
+=======
+>>>>>>> origin/master
+	
+=======
+<<<<<<< HEAD
+>>>>>>> parent of 97e08b4... 第二次提交
+			}
+			
+			
+			
+			
+		}
+	
+
+<<<<<<< HEAD
 		
 		};
 
+<<<<<<< HEAD
 }
+=======
+=======
+=======
+	}
+	
+	
+	
+>>>>>>> parent of 97e08b4... 第二次提交
+}
+>>>>>>> origin/master
+>>>>>>> origin/master

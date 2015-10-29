@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#46a0f0" >
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="消息"
+            android:textSize="20dip" />
+    </LinearLayout>
+
+    <RelativeLayout 
+    android:layout_width= "fill_parent"   
+    android:layout_height= "60dp"   
+    android:background= "@drawable/list_selector"   
+    android:orientation= "horizontal"   
+    android:padding= "5dip"  >  
+  
+
+      
+    <!-- 歌曲名-->  
+    <TextView 
+        android:paddingLeft="10dip" 
+        android:id= "@+id/title"   
+        android:layout_width= "wrap_content"   
+        android:layout_height= "wrap_content"   
+        android:layout_alignTop= "@+id/thumbnail"   
+        android:layout_toRightOf= "@+id/thumbnail"   
+        android:text= "专家支招最健康的早餐搭配法"   
+        android:textColor= "#040404"   
+        android:typeface= "sans"    
+        android:textSize= "15dip"   
+        android:textStyle= "bold" />  
+  
+    <!-- 歌手名 -->  
+    <TextView  
+        android:id= "@+id/keywords"   
+        android:layout_width= "fill_parent"   
+        android:layout_height= "wrap_content"   
+        android:layout_below= "@id/title"   
+        android:textColor= "#343434"   
+        android:textSize= "10dip"   
+        android:layout_marginTop= "1dip"   
+        android:layout_toRightOf= "@+id/thumbnail"   
+        android:text= " 一日之计在于晨。长辈自小就提醒我们：早餐一定要吃得饱"  />  
+  
+  
+        
+     <!-- 进入播放 -->      
+     <ImageView android:layout_width= "wrap_content"   
+        android:layout_height= "wrap_content"   
+        android:src= "@drawable/arrow"   
+        android:layout_alignParentRight= "true"   
+        android:layout_centerVertical= "true" />  
+  
+</RelativeLayout>
+
+        <RelativeLayout 
+    android:layout_width= "fill_parent"   
+    android:layout_height= "60dp"   
+    android:background= "@drawable/list_selector"   
+    android:orientation= "horizontal"   
+    android:padding= "5dip"  >  
+  
+
+      
+    <!-- 歌曲名-->  
+    <TextView 
+        android:paddingLeft="10dip" 
+        android:id= "@+id/ti"   
+        android:layout_width= "wrap_content"   
+        android:layout_height= "wrap_content"   
+        android:layout_alignTop= "@+id/thumbnail"   
+        android:layout_toRightOf= "@+id/thumbnail"   
+        android:text= "营养早餐速成大法"   
+        android:textColor= "#040404"   
+        android:typeface= "sans"    
+        android:textSize= "15dip"   
+        android:textStyle= "bold" />  
+  
+    <!-- 歌手名 -->  
+    <TextView  
+        android:id= "@+id/keyw"   
+        android:layout_width= "fill_parent"   
+        android:layout_height= "wrap_content"   
+        android:layout_below= "@id/ti"   
+        android:textColor= "#343434"   
+        android:textSize= "10dip"   
+        android:layout_marginTop= "1dip"   
+        android:layout_toRightOf= "@+id/thumbnail"   
+        android:text= " 好的早餐可以迅速补充上午工作所需要的能量，"  />  
+  
+  
+        
+     <!-- 进入播放 -->      
+     <ImageView android:layout_width= "wrap_content"   
+        android:layout_height= "wrap_content"   
+        android:src= "@drawable/arrow"   
+        android:layout_alignParentRight= "true"   
+        android:layout_centerVertical= "true" />  
+  
+</RelativeLayout> 
+    
+    
+    
+    
+    
+    
+</LinearLayout>

@@ -3,55 +3,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:background="#46a0f0" >
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="健识"
-            android:textSize="20dip" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="11" >
-    </LinearLayout>
     
     
-    
-     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        
-        <WebView
-        android:id="@+id/webView1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />    
-     
-    </LinearLayout>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-</LinearLayout>
+   <LinearLayout 
+       android:background="#46a0f0"
+       android:layout_width="match_parent"
+      android:layout_height="45dp"
+      
+       
+       >
+         
+       
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:text="动态"
+           android:textSize="20dip"
+           android:gravity="center" />
+       
+   </LinearLayout> 
+   
+      <LinearLayout 
+          
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="11">
+          
+          
+          
+          
+      </LinearLayout>
+   
+   
+    </LinearLayout> 

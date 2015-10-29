@@ -32,7 +32,7 @@
                 android:padding="7dp"/>
            
            <TextView 
-              android:id="@+id/zhuce"
+              
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:text="注册"

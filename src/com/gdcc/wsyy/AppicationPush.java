@@ -20,10 +20,6 @@ public class AppicationPush extends Application {
 		
 	}
 	
-<<<<<<< HEAD
-
-=======
 	
 	
->>>>>>> origin/master
 }

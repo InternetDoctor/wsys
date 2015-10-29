@@ -2,8 +2,6 @@ package com.gdcc.wsyy;
 
 import javax.security.auth.PrivateCredentialPermission;
 
-
-
 import android.app.Activity;
 import android.app.FragmentTransaction;
 import android.content.Intent;
@@ -27,52 +25,22 @@ public class MainActivity extends FragmentActivity implements
 	private RadioGroup group;
 
 	private RadioButton main_service;
-<<<<<<< HEAD
-	//����fragment
-	private FragmentManager framang;
-	
-	
-	  
-	
-	
-	
-=======
 	// ����fragment
 	private FragmentManager framang;
 
->>>>>>> origin/master
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-<<<<<<< HEAD
-	
-		group=(RadioGroup)findViewById(R.id.main_bottom);
-		main_service=(RadioButton)findViewById(R.id.main_home);
-		
-		framang=getSupportFragmentManager();
-		
-=======
 
 		group = (RadioGroup) findViewById(R.id.main_bottom);
 		main_service = (RadioButton) findViewById(R.id.main_home);
 
 		framang = getSupportFragmentManager();
 
->>>>>>> origin/master
 		main_service.setChecked(true);
 
 		group.setOnCheckedChangeListener(this);
-<<<<<<< HEAD
-		
-		//�л���ͬ��fragment
-		
-		changeFragment(new service_main(), true);
-		
-		
-	}
-=======
->>>>>>> origin/master
 
 		// �л���ͬ��fragment
 
@@ -107,15 +75,6 @@ public class MainActivity extends FragmentActivity implements
 
 	}
 
-<<<<<<< HEAD
-	
-	//�л���ͬ��fragment
-	
-	public void changeFragment( Fragment fragment,boolean isFirst){
-		
-		android.support.v4.app.FragmentTransaction tran=framang.beginTransaction();
-		
-=======
 	// �л���ͬ��fragment
 
 	public void changeFragment(Fragment fragment, boolean isFirst) {
@@ -123,7 +82,6 @@ public class MainActivity extends FragmentActivity implements
 		android.support.v4.app.FragmentTransaction tran = framang
 				.beginTransaction();
 
->>>>>>> origin/master
 		tran.replace(R.id.main_content, fragment);
 
 		tran.commit();

@@ -68,10 +68,6 @@
          <activity android:name="com.gdcc.wsyy.me_main"></activity> 
           <activity android:name="com.gdcc.wsyy.NearbyMapActivity"></activity> 
              <activity android:name="com.gdcc.wsyy.YyUI"></activity> 
-<<<<<<< HEAD
-                  <activity android:name="com.gdcc.wsyy.Zhuce"></activity> 
-=======
->>>>>>> origin/master
               <activity android:name="com.example.zixun.vvv"></activity> 
           <activity android:name="com.example.zixun.Desc"></activity> 
         
